@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neon Grid Gallery</title>
   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <style>
-    /* Animated background */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -53,7 +53,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 15px;
-      max-width: 1300px;
+      max-width: 1400px;
       margin: auto;
       padding: 20px;
     }
@@ -110,6 +110,21 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Make responsive font sizes */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 22px;
+      }
+      .header p,
+      .italian {
+        font-size: 16px;
+      }
+      .gallery {
+        padding: 10px;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -123,27 +138,23 @@
 
   <!-- Gallery -->
   <div class="gallery">
-    <!-- Photo 1 -->
     <div class="photo-card">
       <img src="https://i.ibb.co/j9Kwxzw5/35d474753df6a5fa03db5fd5d47a0d48.jpg" alt="Photo 1">
       <a class="download-btn" href="https://i.ibb.co/j9Kwxzw5/35d474753df6a5fa03db5fd5d47a0d48.jpg" download>⬇ Download</a>
     </div>
 
-    <!-- Photo 2 -->
     <div class="photo-card">
       <img src="https://i.ibb.co/Y41wGWrZ/816b9ed194b48f01be52e9de8599351f.jpg" alt="Photo 2">
       <a class="download-btn" href="https://i.ibb.co/Y41wGWrZ/816b9ed194b48f01be52e9de8599351f.jpg" download>⬇ Download</a>
     </div>
 
-    <!-- Add more photos here -->
-  <div class="photo-card">
-  <img src="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" alt="New Photo">
-  <a class="download-btn" href="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" download>⬇ Download</a>
-  
-  
-  
-  
-  
-  
+    <div class="photo-card">
+      <img src="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" alt="Photo 3">
+      <a class="download-btn" href="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" download>⬇ Download</a>
+    </div>
+
+    <!-- Add more photo-card blocks below -->
+  </div>
+
 </body>
 </html>
