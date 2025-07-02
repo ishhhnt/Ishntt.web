@@ -154,6 +154,170 @@
     </div>
 
     <!-- Add more photo-card blocks below -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Grid Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #00E5FF, #1200FF, #5500FF, #00FFC3);
+      background-size: 300% 300%;
+      animation: animatedBg 15s ease infinite;
+    }
+
+    @keyframes animatedBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px 10px;
+      text-align: center;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px #00000044;
+    }
+
+    .header h1 {
+      font-weight: bold;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .italian {
+      font-family: 'Italianno', cursive;
+      font-size: 24px;
+      margin-top: 5px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 1400px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .photo-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 0 15px #00e5ff88, 0 0 25px #1200ff88;
+      transition: transform 0.3s ease;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.03);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00E5FF;
+      transition: all 0.3s ease;
+    }
+
+    .photo-card img:hover {
+      box-shadow: 0 0 20px #00E5FF, 0 0 30px #1200FF;
+    }
+
+    .download-btn {
+      display: block;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #ffffff15;
+      border: 1.5px solid white;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 0 6px #fff;
+      transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: white;
+      color: #1200FF;
+      box-shadow: 0 0 10px white, 0 0 20px #00E5FF;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Make responsive font sizes */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 22px;
+      }
+      .header p,
+      .italian {
+        font-size: 16px;
+      }
+      .gallery {
+        padding: 10px;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Title Section -->
+  <div class="header">
+    <h1>Created by ISHNTTTT</h1>
+    <p>Sponsored by NO ONE</p>
+    <p class="italian">Our Partners: 🐐Gotiya 🦆Batak 🐇Khargos</p>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="photo-card">
+      <img src="https://i.ibb.co/j9Kwxzw5/35d474753df6a5fa03db5fd5d47a0d48.jpg" alt="Photo 1">
+      <a class="download-btn" href="https://i.ibb.co/j9Kwxzw5/35d474753df6a5fa03db5fd5d47a0d48.jpg" download>⬇ Download</a>
+    </div>
+
+    <div class="photo-card">
+      <img src="https://i.ibb.co/Y41wGWrZ/816b9ed194b48f01be52e9de8599351f.jpg" alt="Photo 2">
+      <a class="download-btn" href="https://i.ibb.co/Y41wGWrZ/816b9ed194b48f01be52e9de8599351f.jpg" download>⬇ Download</a>
+    </div>
+
+    <div class="photo-card">
+      <img src="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" alt="Photo 3">
+      <a class="download-btn" href="https://i.ibb.co/ZpZWwV3W/d82f062b907f5dcb15cdbfa4f8ae9b12.jpg" download>⬇ Download</a>
+    </div>
+
+    <!-- Add more photo-card blocks below -->
+<div class="photo-card">
+  <img src="https://i.ibb.co/gFRw79xJ/c4d8bd2bc75d17c9bec2edf92c7aa8e8.jpg" alt="New Photo">
+  <a class="download-btn" href="https://i.ibb.co/gFRw79xJ/c4d8bd2bc75d17c9bec2edf92c7aa8e8.jpg" download>⬇ Download</a>
+</div>  </div>
+
+</body>
+</html>
+  
   </div>
 
 </body>
